@@ -43,6 +43,7 @@ conda create -n see_through python=3.12 -y
 conda activate see_through
 
 # 2. Install PyTorch (CUDA 12.8)
+# aarch64 users: the pinned versions below may not be available; use torch>=2.9.0 instead
 pip install torch==2.8.0+cu128 torchvision==0.23.0+cu128 torchaudio==2.8.0+cu128 \
   --index-url https://download.pytorch.org/whl/cu128
 
@@ -202,6 +203,7 @@ We welcome community contributions and third-party integrations!
 If you build tools, extensions, or workflows on top of this project, please let us know by opening an issue or pull request — we would be happy to feature your work here.
 
 - [ComfyUI-See-through](https://github.com/jtydhr88/ComfyUI-See-through) by [@jtydhr88](https://github.com/jtydhr88) — Integration for ComfyUI, with node-based workflow and in-browser PSD export. Thank you for the amazing work!
+- [PachiPakuGen](https://github.com/kazuya-bros/PachiPakuGen) by [@kazuya-bros](https://github.com/kazuya-bros) — Desktop tool that takes See-Through's decomposed PSD output and generates animation materials (eye blinks, lip-sync mouth shapes) for [SpriTalk](https://kazuyabros.booth.pm/items/8102679), a talking-character animation tool. Visit their [Booth](https://kazuyabros.booth.pm/items/8102679) for the tool and demo videos!
 
 We also seek for i18n help for this project. Your help will be highly appreciated. 
 
